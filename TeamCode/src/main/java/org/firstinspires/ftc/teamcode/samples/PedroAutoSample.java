@@ -62,7 +62,7 @@ public class PedroAutoSample extends CommandOpMode {
                 .setLinearHeadingInterpolation(scorePose.getHeading(), pickup3Pose.getHeading())
                 .build();
 
-        scorePickup3 = follower.pathBuilder()
+        scorePickup3 = follower.pathBuilder()//test later
                 .addPath(new BezierLine(pickup3Pose, scorePose))
                 .setLinearHeadingInterpolation(pickup3Pose.getHeading(), scorePose.getHeading())
                 .build();
